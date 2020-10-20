@@ -5,29 +5,20 @@
   "height": 600,
   "data": {
     "url": "https://github.com/mew619/FIT3179/blob/main/Week9/world_population_2b.topojson",
-    "format": {
-          "type": "topojson",
-          "feature": "world_population_2b"
-        }
+    "format": {"type": "topojson", "feature": "world_population_2b"}
   },
   "transform": [{
-      "lookup": "properties.NAME",
+      "lookup": "properties.name",
       "from": {
-        "data": {
-          "url": "https://github.com/mew619/FIT3179/blob/main/Week9/world_population.csv"
-        },
+        "data": {"url": "https://github.com/mew619/FIT3179/blob/main/Week9/world_population.csv"},
         "key": "Country Name",
         "fields": ["2019"]
       }
     },
     {"calculate": "datum.2019 + 0.1", "as": "Population"}
   ],
-  "projection": {
-    "type": "equirectangular"
-  },
-  "mark": {
-    "type": "geoshape"
-    },
+  "projection": {"type": "equirectangular"},
+  "mark": {"type": "geoshape"},
   "encoding": {
     "color": {
       "field": "Population",
