@@ -29,7 +29,7 @@
                }
     },
     "tooltip": [
-      {"field": "properties.NAME", "type": "nominal", "title": "Country Name"},
+      {"field": "properties.name", "type": "nominal", "title": "Country Name"},
       {"field": "2019", "type": "quantitative"}
     ]
   }
