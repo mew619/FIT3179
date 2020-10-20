@@ -5,13 +5,13 @@
   "height": 600,
   "projection": {"type": "equirectangular"},
   "data": {
-    "url": "https://github.com/mew619/FIT3179/blob/main/Week9/world_population_2b.topojson",
+    "url": "https://github.com/mew619/FIT3179/main/Week9/world_population_2b.topojson",
     "format": {"type": "topojson", "feature": "ne_110m_populated_places_simple"}
   },
   "transform": [{
       "lookup": "properties.NAME",
       "from": {
-        "data": {"url": "https://github.com/mew619/FIT3179/blob/main/Week9/world_population.csv"},
+        "data": {"url": "https://github.com/mew619/FIT3179/main/Week9/world_population.csv"},
         "key": "Country Name",
         "fields": ["2019"]
       }
