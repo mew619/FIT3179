@@ -4,7 +4,7 @@
   "width": 800,
   "height": 600,
   "data": {
-    "url": "https://github.com/mew619/FIT3179/blob/main/Week9/world_population_2b.topojson",
+    "url": "https://github.com/mew619/FIT3179/Week9/world_population_2b.topojson",
     "format": {
           "type": "topojson",
           "feature": "world_population_2b"
@@ -14,7 +14,7 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://github.com/mew619/FIT3179/blob/main/Week9/world_population.csv"
+          "url": "https://github.com/mew619/FIT3179/Week9/world_population.csv"
         },
         "key": "Country Name",
         "fields": ["2019"]
