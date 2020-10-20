@@ -32,7 +32,10 @@
     "color": {
       "field": "Population",
       "type": "quantitative",
-      "scale": {"type": "log"}
+      "scale": {"type": "threshold",
+                "domain": [100000, 1000000, 5000000],
+                "range": ["#fdbe85", "#fd8d3c", "#e6550d", "#a63603"]
+               }
     },
     "tooltip": [
       {"field": "properties.NAME", "type": "nominal", "title": "Country Name"},
