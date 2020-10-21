@@ -19,8 +19,7 @@
         "key": "Country",
         "fields": ["Population"]
       }
-    },
-  ],
+    }],
   "projection": {
     "type": "equirectangular"
   },
